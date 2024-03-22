@@ -8,3 +8,10 @@ class CubicGenerator(SquareGenerator):
 
         cubes = [x ** 3 for x in range(start, end)]
         return cubes
+
+    def generate_squares(self, start, end):
+        if end <= start:
+            raise ValueError("End of the range must be greater than the start.")
+
+        squares = [x ** 2 for x in range(start, end)]
+        return squares

@@ -1,9 +1,8 @@
 import math
-class SquareGenerator:
-    def generate_squares(self, start, end):
-        squares = [x ** 2 for x in range(start, end)]
-        return squares
+from abc import ABC, abstractmethod
 
-    def calculate_square_roots(self, numbers):
-        sq = [math.sqrt(num) for num in numbers]
-        return sq
+
+class SquareGenerator(ABC):
+    @abstractmethod
+    def generate_squares(self, start, end):
+        pass
