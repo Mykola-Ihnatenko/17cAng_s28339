@@ -1,4 +1,4 @@
-from square_generator import SquareGenerator
+from square_generator.square_generator import SquareGenerator
 
 a = SquareGenerator()
 res = a.generate_squares(1, 11)
