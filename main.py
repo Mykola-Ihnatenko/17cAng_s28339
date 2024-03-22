@@ -1,16 +1,10 @@
-# This is a sample Python script.
+from square_generator.square_generator import SquareGenerator
+from cubic_generator import CubicGenerator
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+b = CubicGenerator()
+c = b.generate_cubes(1, 11)
+print(c)
+#c = b.generate_squares(11, 1)
+#print(c
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+#GitHub link: https://github.com/Mykola-Ihnatenko/17cAng_s28339/tree/lab_3
