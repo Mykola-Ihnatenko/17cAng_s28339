@@ -3,6 +3,9 @@ import math
 
 class SquareGenerator:
     def generate_squares(start, end):
+        if end <= start:
+            raise ValueError("End of the range must be greater than the start.")
+
         squares = [x ** 2 for x in range(start, end)]
         return squares
 
