@@ -1,6 +1,6 @@
 import math
 class SquareGenerator:
-    def generate_squares(start, end):
+    def generate_squares(self, start, end):
         if end <= start:
             raise ValueError("End of the range must be greater than the start.")
 
